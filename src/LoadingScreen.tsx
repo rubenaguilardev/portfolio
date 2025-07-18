@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
 
 
-const LoadingScreen = ({ onComplete }) => {
+type LoadingScreenProps = {
+    onComplete: () => void
+}
+
+const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
 
     const [text, setText] = useState('')
     const fullText = "<Ruben Aguilar />"
