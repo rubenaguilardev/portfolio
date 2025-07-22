@@ -5,10 +5,10 @@ type LoadingScreenProps = {
     onComplete: () => void
 }
 
-const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
+const LoadingScreen = ({ onComplete}: LoadingScreenProps) => {
 
     const [text, setText] = useState('')
-    const fullText = "<Ruben Aguilar />"
+    const fullText = "<Ruben />"
 
     useEffect(() => {
         let index = 0
@@ -35,7 +35,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
                 {text} <span className="animate-blink ml-1"> | </span>
             </div>
             <div className="w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
-                <div className="w-[50%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar"></div>
+                <div className="w-full h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar"></div>
             </div>
         </div>
     )
