@@ -26,7 +26,7 @@ const Navbar = () => {
                             <a 
                                 href={link.href} 
                                 key={index} 
-                                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                                className="px-4 py-2 text-sm text-muted-foreground hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300"
                             >
                                 {link.label}
                             </a>

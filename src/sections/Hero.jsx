@@ -1,3 +1,7 @@
+import Button from '@/components/Button'
+import { ArrowRight, Download, Github, Linkedin } from 'lucide-react'
+import AnimatedBorderButton from '../components/AnimatedBorderButton'
+
 const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -37,6 +41,36 @@ const Hero = () => {
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo perferendis ea enim, fugit voluptatibus iste debitis ex quisquam quidem quo ducimus error amet deserunt inventore architecto accusamus animi nesciunt?
                             </p>
+                        </div>
+
+                        <div className='flex flex-wrap gap-4 animated-fade-in animation-delay-300'>
+                            <Button size="lg">Contact Me <ArrowRight className='w-5 h-5' /></Button>
+                            <AnimatedBorderButton />
+                        </div>
+
+                        <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
+                            <span className='text-sm text-muted-foreground'>Follow me:</span>
+                            {[
+                                { icon: Github, href: '#' },
+                                { icon: Linkedin, href: '#' },
+                                
+                            ].map((social, index) => (
+                                <a 
+                                    key={index} 
+                                    href={social.href} 
+                                    className='p-2 rounded-full glass hover:bg-primary/15 hover:text-primary transition-all duration-300'
+                                >
+                                    {<social.icon className='w-5 h-5' />}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className='relative animate-fade-in animation-delay-300'>
+                        <div className='relative max-w-md mx-auto'>
+                            <div className='relative glass rounded-3xl p-2 glow-border'>
+                                <img src="profile-photo.png" alt="Ruben Aguilar" className='full aspect-4/5 object-cover rounded-2xl'/>
+                            </div>
                         </div>
                     </div>
                 </div>
