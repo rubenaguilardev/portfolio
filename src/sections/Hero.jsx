@@ -12,7 +12,7 @@ const Hero = () => {
                     <div 
                         className={`absolute w-1.5 h-1.5 rounded-full opacity-60`}
                         style={{
-                            backgroundColor: "dodgerblue", 
+                            backgroundColor: "#1E90FF80", 
                             left: `${Math.random() * 100}%`,
                             top: `${Math.random() * 100}%`,
                             animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
