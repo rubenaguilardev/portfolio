@@ -30,7 +30,7 @@ const Projects = () => {
         {
             title: 'Lorem Ipsum',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate, error eos repellendus fuga blanditiis quas eligendi magnam quod! Harum animi voluptatibus amet.',
-            image: 'profile-photo.png',
+            image: 'socialbuffington.png',
             tags: ['React', 'TailwindCSS'],
             link: '#',
             github: '#'
@@ -39,7 +39,7 @@ const Projects = () => {
     return (
         <section id='projects' className="py-32 relative overflow-hidden">
             <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">Featured Work</span>
@@ -58,15 +58,15 @@ const Projects = () => {
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className="w-full h-full object-cover tranistion-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-full object-cover object-center tranistion-transform duration-700 group-hover:scale-110 group-hover:opacity-50"
                                 />
-                                <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60"/>
+                                
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                    <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
-                                        <ArrowUpRight className="h-6 w-6"/>
+                                    <a href={project.link} className="p-3 rounded-full glass-strong hover:bg-primary hover:text-primary-foreground transition-all">
+                                        <ArrowUpRight className="h-8 w-8"/>
                                     </a>
                                     <a href={project.github} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
-                                        <Github className="h-6 w-6"/>
+                                        <Github className="h-8 w-8"/>
                                     </a>
                                 </div>
                             </div>
