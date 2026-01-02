@@ -15,29 +15,32 @@ const About = () => {
             <div className='container mx-auto relative z-10'>
                 <div className='grid max-w-4xl mx-auto'>
                     <div className='flex justify-center animate-fade-in mx-auto glass-strong w-full py-1 rounded-t-md'>
-                        <p><span className='text-muted-foreground '>aboutMe@admin:~</span></p>
+                        <div>
+                            <span className='h-5 w-5 bg-black'></span>
+                        </div>
+                        <p><span className='text-muted-foreground '>admin@aboutMe:~</span></p>
                         <div className='absolute right-2'>
-                            <div className='flex gap-4 items-center cursor-pointer'>
+                            <div className='flex gap-4 items-center cursor-pointer text-muted-foreground'>
                                 <div className='rounded-full hover:bg-muted-foreground p-1'>
-                                    <Minus className='relative top-1 h-3 w-3'/>
+                                    <Minus className='relative top-1 h-3 w-3 hover:text-white'/>
                                 </div>
-                                <div className='rounded-full hover:bg-muted-foreground p-1'>
+                                <div className='rounded-full hover:text-white hover:bg-muted-foreground p-1'>
                                     <Square className='h-3 w-3'/>
                                 </div>
-                                <div className='rounded-full bg-muted-foreground p-1 hover:bg-amber-500'>
-                                    <X className='h-4 w-4'/>
+                                <div className='rounded-full bg-amber-600 p-1 hover:bg-amber-500 text-white'>
+                                    <X className='h-3.5 w-3.5'/>
                                 </div>
                                 
                             </div>
                         </div>
                         
                     </div>
-                    <div className='flex flex-col bg-black/20 px-1 space-y-4'>
-                        <p><span className='text-primary'>aboutMe@admin:~$</span> whoami</p>
+                    <div className='flex flex-col bg-black/40 px-1 py-1 space-y-4'>
+                        <p><span className='text-primary'>admin@aboutMe:~$</span> whoami</p>
                         {about.map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>
                         ))}
-                        <p><span className='text-primary'>aboutMe@admin:~$</span></p>
+                        <p><span className='text-primary'>admin@aboutMe:~$</span></p>
                     </div>
                 </div>
             </div>
