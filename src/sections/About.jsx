@@ -12,8 +12,8 @@ const About = () => {
 
     return (
         <section id='about' className='py-32 relative overflow-hidden'>
-            <div className='container mx-auto relative z-10'>
-                <div className='grid max-w-4xl mx-auto'>
+            <div className='container mx-auto px-6 relative z-10'>
+                <div className='grid lg:max-w-237.5 mx-auto'>
                     <div className='flex justify-center animate-fade-in mx-auto glass-strong w-full py-1 rounded-t-md'>
                         <div>
                             <span className='h-5 w-5 bg-black'></span>
@@ -35,7 +35,7 @@ const About = () => {
                         </div>
                         
                     </div>
-                    <div className='flex flex-col bg-black/40 px-1 py-1 space-y-4'>
+                    <div className='flex flex-col bg-black/40 px-2 py-1 space-y-4'>
                         <p><span className='text-primary'>admin@aboutMe:~$</span> whoami</p>
                         {about.map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>

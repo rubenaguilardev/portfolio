@@ -26,9 +26,9 @@ const Hero = () => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8">
                         <div>
-                            <span className="inline-flex animate-fade-in items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                            <span className="inline-flex animate-fade-in items-center gap-2 px-4 py-2 rounded-full glass text-sm uppercase tracking-widest text-primary">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/>
-                                    Software Engineer •
+                                    software engineer • fullstack developer
                             </span>
                         </div>
 
