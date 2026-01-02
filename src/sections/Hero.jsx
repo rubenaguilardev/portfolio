@@ -7,7 +7,7 @@ const skills = ['React', 'Next.js', 'Typescript', 'Node', 'Express', 'PostgresSQ
 const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="fixed inset-0 overflow-hidden pointer-events-none">
                 {[...Array(35)].map((_, i) => (
                     <div 
                         className={`absolute w-1.5 h-1.5 rounded-full opacity-60`}
@@ -62,7 +62,7 @@ const Hero = () => {
                                     href={social.href} 
                                     className='p-2 rounded-full glass hover:bg-primary/15 hover:text-primary transition-all duration-300'
                                 >
-                                    {<social.icon className='w-5 h-5' />}
+                                    {<social.icon className='w-6 h-6' />}
                                 </a>
                             ))}
                         </div>
