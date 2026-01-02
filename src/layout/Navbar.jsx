@@ -28,8 +28,8 @@ const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? 'glass-strong py-3' : 'bg-transparent py-5'} bg-transparent py-5 z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-                    RA<span className="text-primary">.</span>
+                <a href="#" className="font-bold tracking-tight hover:text-primary">
+                    Ruben Aguilar<span className="text-primary">.</span>
                 </a>
 
                 <div className="hidden md:flex items-center gap-1">
@@ -38,7 +38,7 @@ const Navbar = () => {
                             <a 
                                 href={link.href} 
                                 key={index} 
-                                className="px-4 py-2 text-sm text-muted-foreground hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300"
+                                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-primary/10 transition-all duration-300"
                             >
                                 {link.label}
                             </a>
@@ -65,13 +65,19 @@ const Navbar = () => {
                         <a 
                             href={link.href} 
                             key={index} 
+                            onClick={() => setIsMobileMenuOpen(false)}
                             className="text-lg text-muted-foreground hover:text-foreground py-2"
                         >
                             {link.label}
                         </a>
                     ))}
 
-                    <Button className='mt-4'>Contact Me</Button>
+                    <Button 
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className='mt-4'
+                    >
+                            Contact Me
+                    </Button>
 
                     </div>
                 </div>
