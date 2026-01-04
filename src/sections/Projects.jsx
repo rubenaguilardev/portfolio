@@ -32,7 +32,7 @@ const Projects = () => {
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate, error eos repellendus fuga blanditiis quas eligendi magnam quod! Harum animi voluptatibus amet.',
             image: 'socialbuffington.png',
             tags: ['React', 'TailwindCSS'],
-            link: '#',
+            link: 'https://www.socialbuffington.com/',
             github: '#'
         }
     ]
@@ -58,7 +58,7 @@ const Projects = () => {
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className="w-full h-full object-cover object-center tranistion-transform duration-700 group-hover:scale-110 group-hover:opacity-50"
+                                    className="w-full h-full object-cover tranistion-transform duration-700 group-hover:scale-110 group-hover:opacity-50"
                                 />
                                 
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
