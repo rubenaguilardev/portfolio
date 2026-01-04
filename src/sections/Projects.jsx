@@ -5,7 +5,7 @@ const Projects = () => {
     const projects = [
         {
             title: 'Lorem Ipsum',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate, error eos repellendus fuga blanditiis quas eligendi magnam quod! Harum animi voluptatibus amet.',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate.',
             image: 'profile-photo.png',
             tags: ['React', 'TailwindCSS'],
             link: '#',
@@ -13,7 +13,7 @@ const Projects = () => {
         },
         {
             title: 'Lorem Ipsum',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate, error eos repellendus fuga blanditiis quas eligendi magnam quod! Harum animi voluptatibus amet.',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate.',
             image: 'profile-photo.png',
             tags: ['React', 'TailwindCSS'],
             link: '#',
@@ -21,7 +21,7 @@ const Projects = () => {
         },
         {
             title: 'Lorem Ipsum',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate, error eos repellendus fuga blanditiis quas eligendi magnam quod! Harum animi voluptatibus amet.',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate.',
             image: 'profile-photo.png',
             tags: ['React', 'TailwindCSS'],
             link: '#',
@@ -29,7 +29,7 @@ const Projects = () => {
         },
         {
             title: 'Lorem Ipsum',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate, error eos repellendus fuga blanditiis quas eligendi magnam quod! Harum animi voluptatibus amet.',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eos. Exercitationem cupiditate.',
             image: 'socialbuffington.png',
             tags: ['React', 'TailwindCSS'],
             link: 'https://www.socialbuffington.com/',
@@ -70,7 +70,24 @@ const Projects = () => {
                                     </a>
                                 </div>
                             </div>
+                            {/* {content} */}
+                            <div className="p-6 space-y-4">
+                                <div className="flex items-start justify-between">
+                                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{project.title}</h3>
+                                    <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"/>
+                                </div>
+                                <p className="text-muted-foreground text-sm">{project.description}</p>
+                                <div className="flex flex-wrap gap-2">
+                                    {project.tags.map((tag, tagIndex) => (
+                                        <span className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                                    
+                            </div>
                         </div>
+                        
                     ))}
                 </div>
             </div>
