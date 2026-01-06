@@ -15,7 +15,7 @@ const Experience = () => {
             company: 'lorem ipsum',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eos sint alias fuga facilis, nihil, impedit distinctio voluptates.',
             technologies: ['React', 'React', 'React', 'React'],
-            current: true
+            current: false
         },
 
     ]

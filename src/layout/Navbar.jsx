@@ -1,5 +1,5 @@
 import Button from "@/components/Button"
-import { Menu, X } from "lucide-react"
+import { Code, Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 
 const Navbar = () => {
@@ -22,14 +22,14 @@ const Navbar = () => {
         { href: '#about', label: 'About' },
         { href: '#projects', label: 'Projects' },
         { href: '#experience', label: 'Experience' },
-        { href: '#testimonials', label: 'Testimonials' },
+        { href: '#education', label: 'Education' },
     ]
 
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? 'glass-strong py-3' : 'bg-transparent py-5'} bg-transparent py-4 z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="font-bold tracking-tight hover:text-primary">
-                    Ruben Aguilar<span className="text-primary">.</span>
+                <a href="#" className="flex items-center gap-3 font-bold text-2xl  bg-linear-to-r from-primary via-primary/70 to-primary/40 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                    <Code className="h-6 w-6 text-primary"/> Ruben
                 </a>
 
                 <div className="hidden md:flex items-center gap-1">
