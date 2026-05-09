@@ -65,7 +65,7 @@ const Header = () => {
               </a>
             ))}
             <a href="#contact">
-              <Button size='default'>Say Hello</Button>
+              <Button onClick={() => setIsMobileMenuOpen(false)} size='default'>Say Hello</Button>
             </a>
           </div>
 

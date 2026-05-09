@@ -64,7 +64,7 @@ const Hero = () => {
           <Card />
         </div>
       </div>
-      <div className='absolute bottom-6 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800 z-10'>
+      <div className='hidden lg:block absolute bottom-6 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800 z-10'>
         <a href="#about" className='flex flex-col items-center gap-2 text-muted-foreground'>
           <span className='text-xs uppercase tracking-wider'>Scroll</span>
           <FaChevronDown className='w-6 h-6 animate-bounce' />

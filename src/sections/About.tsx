@@ -1,4 +1,4 @@
-import profile from '@/assets/profile.png'
+import profile from '@/assets/profile.jpg'
 
 const About = () => {
   return (
@@ -14,12 +14,12 @@ const About = () => {
               <span className='text-primary glow-text'> Developer</span>
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
-              <p>I'm a full-stack developer currently pursuing my Master's in Computer Science, with a strong foundation in both frontend and backend development and an eye for design. I enjoy the full spectrum of building, from crafting clean intuitive interfaces to engineering solid APIs, and I have a solid understanding of security principles that informs how I build.</p>
-              <p>My go-to stack includes React, Next.js, TypeScript, and Tailwind on the frontend, Node.js and Express on the backend, with PostgreSQL and MongoDB for data, and Figma and Canva when it's time to design.</p>
-              <p>When I'm not pushing commits, you'll find me in the kitchen experimenting with new recipes or settled in for a good movie. The same curiosity that pulls me into a new technology is the one that has me trying to perfect a dish at midnight.</p>
+              <p>I'm a full-stack developer with a passion for building things that look just as good as they work, currently deepening that foundation through a Master's in Computer Science. I care deeply about the details, from the way a component feels on mobile to the logic powering it behind the scenes.</p>
+              <p>I specialize in crafting clean interfaces with React, Next.js, TypeScript, and Tailwind, bringing Figma and Canva designs into polished responsive experiences, backed by Node.js, Express, PostgreSQL, and MongoDB.</p>
+              <p>When I'm not pushing commits, you'll find me in the kitchen experimenting with new recipes or settled in for a good movie.</p>
             </div>
             <div className="glass glow-border rounded-2xl p-6 animate-fade-in animation-delay-300">
-              <p className="text-lg font-medium italic text-foreground">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nihil molestias, blanditiis soluta fuga alias.</p>
+              <p className="text-lg font-medium italic text-foreground">My goal is to build things that are fast, beautiful, and intuitive. Experiences that leave an impression.</p>
             </div>
           </div>
           <div className="relative animate-fade-in animation-delay-300">
@@ -31,6 +31,7 @@ const About = () => {
                   alt="Ruben Aguilar"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
+                <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
                 <div className='absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float'>
                   <div className='flex items-center gap-3'>
                     <div className='w-3 h-3 bg-green-500 rounded-full animate-pulse' />
@@ -39,7 +40,7 @@ const About = () => {
                 </div>
                 <div className='absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500'>
                   <div className='text-xl font-bold text-primary'>MS</div>
-                  <div className='text-xs text-muted-foreground'>Computer Science</div>
+                  <div className='text-xs text-base-foreground font-medium'>Computer Science</div>
                 </div>
               </div>
             </div>

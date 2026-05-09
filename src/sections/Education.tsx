@@ -33,7 +33,7 @@ const Education = () => {
             Pursuing my M.S. in Computer Science at WGU, building on a B.S. in Software Engineering, grounded in both theory and practical application.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-24">
           {degrees.map((degree, index) => {
             const Icon = degree.icon
             return (
