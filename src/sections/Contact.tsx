@@ -15,14 +15,11 @@ const Contact = () => {
     <section id='contact' className="relative py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 bg-linear-to-r from-primary to-primary-primary/50 bg-clip-text text-transparent">
-              <span className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">
-                  Contact 
-                  <span className="font-normal"> Me</span>
-              </span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-primary glow-text">
+            Contact Me
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eius quos quisquam eum! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eius quos quisquam eum!
           </p>
         </div>
 
@@ -31,46 +28,46 @@ const Contact = () => {
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                <input 
-                  id='name' 
+                <input
+                  id='name'
                   type='text'
                   required
-                  placeholder="Your name..." 
+                  placeholder="Your name..."
                   className="w-full px-4 py-3 rounded-xl border border-border/70 bg-black/40 focus:border-primary focus:ring-0.5 focus:ring-primary-foreground focus:bg-primary/10 outline-none transition-all"
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                <input 
-                  id="email" 
-                  type="email" 
+                <input
+                  id="email"
+                  type="email"
                   required
-                  placeholder="your@email.com" 
+                  placeholder="your@email.com"
                   className="w-full px-4 py-3 rounded-xl border border-border/70 bg-black/40 focus:border-primary focus:ring-0.5 focus:ring-primary-foreground focus:bg-primary/10 outline-none transition-all"
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                <textarea 
-                  id="message" 
+                <textarea
+                  id="message"
                   rows={5}
                   required
-                  placeholder="Your message..." 
+                  placeholder="Your message..."
                   className="w-full px-4 py-3 rounded-xl border border-border/70 bg-black/40 focus:border-primary focus:ring-0.5 focus:ring-primary-foreground focus:bg-primary/10 outline-none transition-all resize-none"
                 />
               </div>
               <Button className='w-full' size='lg' type='submit'>Send Message</Button>
             </form>
-          </div> 
+          </div>
           <div className="flex md:flex-col justify-center items-center glass gap-6 py-4 md:py-0 px-5 rounded">
-            {contactlLinks.map(({icon: Icon, color })=> (
+            {contactlLinks.map(({ icon: Icon, color }) => (
               <a href="">
-                {Icon === gmail ? <img src={Icon} className="w-8 h-8" /> : 
-              <Icon className={`h-8 w-8 cursor-pointer`} style={{color}} />}
+                {Icon === gmail ? <img src={Icon} className="w-8 h-8" /> :
+                  <Icon className={`h-8 w-8 cursor-pointer`} style={{ color }} />}
               </a>
-              
+
             ))}
-          </div> 
+          </div>
         </div>
       </div>
     </section>

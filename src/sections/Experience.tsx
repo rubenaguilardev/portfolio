@@ -24,7 +24,7 @@ const Experience = () => {
         <div className="max-w-3xl mb-16">
           <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">Career Journey</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 ">
-            <span className="bg-linear-to-r from-primary to-primary/50 bg-clip-text text-transparent">Experience </span>
+            <span className="text-primary glow-text">Experience </span>
             that speaks volumes.
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">

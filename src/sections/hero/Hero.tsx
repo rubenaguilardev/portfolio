@@ -7,7 +7,7 @@ import Card from './Card';
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/rubenaguilardev' },
   { icon: FaLinkedin, href: 'https://www.linkedin.com/in/rubenaguilar-/' },
-  { icon: FaBluesky, href: '#' }
+  { icon: FaBluesky, href: 'https://bsky.app/profile/benaguilar.bsky.social' }
 ]
 
 
@@ -48,10 +48,16 @@ const Hero = () => {
                 </a>
               ))}
             </div>
+
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-500'>
-              <Button className='' size='lg'>Contact me <FaLongArrowAltRight className='w-5 h-5' /></Button>
-              <AnimatedBorderButton>View Projects</AnimatedBorderButton>
+              <a href="#contact">
+                <Button className='' size='lg'>Contact me <FaLongArrowAltRight className='w-5 h-5' /></Button>
+              </a>
+              <a href="#projects">
+                <AnimatedBorderButton>View Projects</AnimatedBorderButton>
+              </a>
             </div>
+
           </div>
           <Card />
         </div>

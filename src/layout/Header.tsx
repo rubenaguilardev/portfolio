@@ -42,7 +42,9 @@ const Header = () => {
           </div>
         </div>
         <div className='hidden md:block'>
-          <Button className='' size={'sm'}>Say Hello</Button>
+          <a href="#contact">
+            <Button size={'sm'}>Say Hello</Button>
+          </a>
         </div>
         <button onClick={() => setIsMobileMenuOpen(prev => !prev)} className='md:hidden p-2 text-foreground cursor-pointer'>
           {isMobileMenuOpen ? <IoMdClose size={24} /> : <IoMdMenu size={24} />}
@@ -62,7 +64,9 @@ const Header = () => {
                 {label}
               </a>
             ))}
-            <Button className='' size='default'>Say Hello</Button>
+            <a href="#contact">
+              <Button size='default'>Say Hello</Button>
+            </a>
           </div>
 
         </div>
