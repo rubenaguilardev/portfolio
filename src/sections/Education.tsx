@@ -28,9 +28,9 @@ const Education = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mx-auto max-w-3xl mb-16">
           <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">Academic Journey</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">Lorem ipsum dolor sit amet.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">Always Learning</h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempore illum, quibusdam excepturi perspiciatis, quas quasi error natus!
+            Pursuing my M.S. in Computer Science at WGU, building on a B.S. in Software Engineering, grounded in both theory and practical application.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-12">

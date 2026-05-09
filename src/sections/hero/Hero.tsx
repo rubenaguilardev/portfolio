@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-32 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
           <div className="space-y-8">
             <div className="">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary animate-fade-in">
@@ -32,23 +32,25 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg font-medium text-muted-foreground max-w-lg lg:max-w-xl animate-fade-in animation-delay-200">
-                Hi, I'm <span className="text-white">Ruben Aguilar</span> - a <span className="text-primary">software developer</span> sit amet consectetur adipisicing elit. Repellat earum hic enim eos fugiat omnis. Officia.
+                Hi, I'm
+                <span className="text-white"> Ruben </span>
+                — a <span className="text-primary">full-stack software developer </span>
+                pursuing my Master's in CS, with an eye for detail and a love for good design. I craft web apps that are fast, functional, and polished. I work well in teams and care deeply about the craft.
               </p>
+              <div className='flex items-center gap-4'>
+                <span></span>
+                {socialLinks.map(({ icon: Icon, href }, index) => (
+                  <a
+                    key={index}
+                    href={href}
+                    target='_blank'
+                    rel='nonopener'
+                    className='px-3 py-2.5 glass rounded-lg cursor-pointer hover:bg-surface/20 animate-fade-in animation-delay-300'>
+                    {<Icon className='h-7 w-7 transition-transform duration-300 hover:scale-115' />}
+                  </a>
+                ))}
+              </div>
             </div>
-            <div className='flex items-center gap-4'>
-              <span></span>
-              {socialLinks.map(({ icon: Icon, href }, index) => (
-                <a
-                  key={index}
-                  href={href}
-                  target='_blank'
-                  rel='nonopener'
-                  className='px-3 py-2.5 glass rounded-lg cursor-pointer hover:bg-surface/20 animate-fade-in animation-delay-300'>
-                  {<Icon className='h-7 w-7 transition-transform duration-300 hover:scale-115' />}
-                </a>
-              ))}
-            </div>
-
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-500'>
               <a href="#contact">
                 <Button className='' size='lg'>Contact me <FaLongArrowAltRight className='w-5 h-5' /></Button>
@@ -62,7 +64,7 @@ const Hero = () => {
           <Card />
         </div>
       </div>
-      <div className='absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800'>
+      <div className='absolute bottom-6 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800 z-10'>
         <a href="#about" className='flex flex-col items-center gap-2 text-muted-foreground'>
           <span className='text-xs uppercase tracking-wider'>Scroll</span>
           <FaChevronDown className='w-6 h-6 animate-bounce' />

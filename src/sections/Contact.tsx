@@ -19,7 +19,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eius quos quisquam eum!
+            Let's talk. Whether it's a project, opportunity, or just a hello.
           </p>
         </div>
 

@@ -28,7 +28,7 @@ const Experience = () => {
             that speaks volumes.
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias officia dolore veniam, impedit, quasi similique ratione quod et ullam.
+            From freelance work to real-world teams, a look at the experiences that drive my work.
           </p>
         </div>
         <div className="relative">

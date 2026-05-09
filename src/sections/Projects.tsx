@@ -72,7 +72,7 @@ const Projects = () => {
           <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">Featured Work</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100"><span className="text-primary glow-text">Projects</span> that make an impact.</h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempore illum, quibusdam excepturi perspiciatis, quas quasi error natus!
+            A selection of projects built with clean code, thoughtful design, and real-world impact.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
