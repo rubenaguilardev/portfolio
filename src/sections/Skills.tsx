@@ -6,39 +6,28 @@ import TypeScript from '@/components/ui/icons/Typescript'
 import Node from '@/components/ui/icons/Node'
 import Express from '@/components/ui/icons/Express'
 import Postgres from '@/components/ui/icons/Postgress'
+import Mongo from '@/components/ui/icons/Mongo'
 
 const Skills = () => {
 
-  // const skills = [
-  //   { label: 'React', icon: '' },
-  //   { label: 'Next.js', icon: '' },
-  //   { label: 'Typescript', icon: '' },
-  //   { label: 'Tailwind CSS', icon: '' },
-  //   { label: 'Node.js', icon: '' },
-  //   { label: 'Express.js', icon: '' },
-  //   { label: 'PostgresSQL', icon: '' },
-  //   { label: 'MongoDB', icon: '' },
-  //   { label: 'AWS', icon: '' },
-  //   { label: 'Figma', icon: '' },
-  //   { label: 'Git', icon: '' },
-  //   { label: 'Linux', icon: '' },
-    
-  // ]
+
   return (
-    <section className='relative overflow-hidden py-32'>
-      <div className='flex justify-center items-center gap-4'>
-        <TypeScript className='w-15 animate-float-long'/>
-        <React className='w-20 animate-float-reverse-long' />
-        <TailwindCSS className='w-15 animate-float-long'/>
-        <Nextjs className='w-20'/>
-        <Figma className='h-15 w-15'/>
-        <Node className='h-18' />
-        <Express className='w-20' />
-        <Postgres className='w-15 h-15' />
+    <section id='skills' className='relative overflow-hidden py-32'>
+      <div className='flex flex-wrap max-w-xl md:max-w-full mx-auto justify-center items-center gap-4 px-6'>
+        <TypeScript className='w-19 md:animate-float-reverse-long animate-float-long' />
+        <React className='w-30 md:animate-float-long animate-float-reverse-long' />
+        <TailwindCSS className='w-20 md:animate-float-reverse-long animate-float-long' />
+        <Nextjs className='w-22 md:animate-float-long animate-float-reverse-long' />
+        <Figma className='h-18 w-18 animate-float-long md:animate-float-reverse-long' />
+        <Node className='h-21 animate-float-reverse-long md:animate-float-long' />
+        <Express className='w-22 md:animate-float-reverse-long animate-float-long' />
+        <Postgres className='w-20 h-20 animate-float-reverse-long md:animate-float-long' />
+        <Mongo className='w-20 h-20 md:animate-float-reverse-long animate-float-long' />
+
       </div>
-    
+
     </section>
-    
+
   )
 }
 

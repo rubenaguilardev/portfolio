@@ -4,7 +4,7 @@ const experiences = [
     role: 'Frontend Developer/UI Designer',
     company: 'Chingu',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi veritatia.',
-    technologies: ['React', 'Typescript', 'TailwindCSS', 'Figma', '...'],
+    technologies: ['React', 'Next', 'Typescript', 'TailwindCSS', 'Figma', 'Canva'],
     current: true
   },
   {
@@ -12,18 +12,21 @@ const experiences = [
     role: 'Freelance Developer',
     company: 'Self-Employed',
     description: 'Delivered custom web solutions for small businesses and professionals, handling everything from design to deployment.',
-    technologies: ['React', 'Typescript', 'TailwindCSS', 'Figma', '...'],
+    technologies: ['React', 'Typescript', 'TailwindCSS', 'Figma', 'Node', 'Express', 'PostgreSQL', 'MongoDB', 'Supabase'],
     current: true
   }
 ]
 
 const Experience = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id='experience' className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">Career Journey</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">Experience that speaks volumes.</h2>
+          <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">Career Journey</span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 ">
+            <span className="bg-linear-to-r from-primary to-primary/50 bg-clip-text text-transparent">Experience </span>
+            that speaks volumes.
+          </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias officia dolore veniam, impedit, quasi similique ratione quod et ullam.
           </p>
@@ -32,7 +35,7 @@ const Experience = () => {
           <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} 
+              <div key={index}
                 className="relative grid md:grid-cols-2 gap-8 animate-fade-in"
                 style={{ animationDelay: `${(index + 1) * 150}ms` }}
               >

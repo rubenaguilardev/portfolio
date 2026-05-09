@@ -1,10 +1,12 @@
 import AnimatedBorderButton from "@/components/ui/AnimatedBorderButton"
 import { FiArrowUpRight, FiGithub } from "react-icons/fi"
+import { FaFigma } from "react-icons/fa6";
 import debug from '../assets/debug.png'
 import chingu from '../assets/chingu.png'
 import social from '../assets/sb.png'
 import cisco from '../assets/cisco.png'
 import stemly from '../assets/stemly.png'
+import paws from '../assets/paws.png'
 
 
 const projects = [
@@ -22,15 +24,17 @@ const projects = [
     image: cisco,
     tags: ["Figma", 'Canva', 'React', 'Typescript', 'TailwindCSS', 'Supabase', 'PostgreSQL'],
     link: 'https://ciscopatch.vercel.app/',
-    github: 'https://github.com/rubenaguilardev/cp'
+    github: 'https://github.com/rubenaguilardev/cp',
+    figma: 'https://www.figma.com/design/hSWBAlV63msPpCTTiDXn6d/CiscoPatch?node-id=0-1&p=f'
   },
   {
-    title: "Stemly",
+    title: "Stemly - Work in progress",
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
     image: stemly,
     tags: ["Figma", "Canva", "React", 'Typescript', 'TailwindCSS', "FastAPI", "PostgreSQL"],
     link: 'https://v60-tier3-team-39.netlify.app/',
-    github: 'https://github.com/chingu-voyages/V59-tier3-team-39'
+    github: 'https://github.com/chingu-voyages/V59-tier3-team-39',
+    figma: 'https://www.figma.com/design/R57ocInGi4U0TA72AmSRWV/Stemly?node-id=0-1&t=xlxnKhzlPv6Iw1ZL-1'
   },
   {
     title: "Debug Your Interview",
@@ -46,10 +50,18 @@ const projects = [
     image: chingu,
     tags: ['Figma', 'Canva', 'React', 'Typescript', 'TailwindCSS'],
     link: 'https://v58-tier3-team-39.onrender.com/',
-    github: 'https://github.com/chingu-voyages/V58-tier3-team-39'
+    github: 'https://github.com/chingu-voyages/V58-tier3-team-39',
+    figma: 'https://www.figma.com/design/UEGHVlucUZSJjj9HCnFEF6/Chingu-Demographics?node-id=0-1&t=xlxnKhzlPv6Iw1ZL-1'
   },
-
-
+  {
+    title: "Little Paws",
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    image: paws,
+    tags: ['Figma', 'Canva', 'React', 'Typescript', 'TailwindCSS'],
+    link: 'https://v57-tier3-team-40.netlify.app/',
+    github: 'https://github.com/chingu-voyages/V57-tier3-team-40',
+    figma: 'https://www.figma.com/design/jrXhqo2KB28HM249MQ493A/Untitled?node-id=0-1&t=0rSEdfeOeBH2n6EV-1'
+  },
 ]
 
 const Projects = () => {
@@ -80,6 +92,11 @@ const Projects = () => {
                   <a href={project.github} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                     <FiGithub className="w-5 h-5" />
                   </a>
+                  {project.figma && (
+                    <a href={project.figma} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                      <FaFigma className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="p-6 space-y-4">
@@ -100,10 +117,12 @@ const Projects = () => {
           ))}
         </div>
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View all projects
-            <FiArrowUpRight />
-          </AnimatedBorderButton>
+          <a href="https://github.com/rubenaguilardev" target="_blank" rel="noopener noreferrer">
+            <AnimatedBorderButton>
+              View all projects
+              <FiArrowUpRight />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-32 items-center">
           <div className="space-y-8">
             <div className="">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary animate-fade-in">
@@ -37,10 +37,10 @@ const Hero = () => {
             </div>
             <div className='flex items-center gap-4'>
               <span></span>
-              {socialLinks.map(({icon: Icon, href}, index) => (
-                <a 
-                  key={index} 
-                  href={href} 
+              {socialLinks.map(({ icon: Icon, href }, index) => (
+                <a
+                  key={index}
+                  href={href}
                   target='_blank'
                   rel='nonopener'
                   className='px-3 py-2.5 glass rounded-lg cursor-pointer hover:bg-surface/20 animate-fade-in animation-delay-300'>
@@ -60,7 +60,7 @@ const Hero = () => {
         <a href="#about" className='flex flex-col items-center gap-2 text-muted-foreground'>
           <span className='text-xs uppercase tracking-wider'>Scroll</span>
           <FaChevronDown className='w-6 h-6 animate-bounce' />
-        </a>    
+        </a>
       </div>
     </section>
   )
