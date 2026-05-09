@@ -7,8 +7,9 @@ import Education from "@/sections/Education"
 import Experience from "@/sections/Experience"
 import Contact from "@/sections/Contact"
 import Projects from "@/sections/Projects"
+import Footer from "@/layout/Footer"
 
-const App = () => {  
+const App = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
       <Bokeh />
@@ -20,8 +21,9 @@ const App = () => {
         <Skills />
         <Experience />
         <Education />
-        <Contact /> 
+        <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
