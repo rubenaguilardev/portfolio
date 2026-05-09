@@ -25,10 +25,10 @@ const Hero = () => {
             </div>
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Hi <span className="text-primary glow-text">ipsum</span>
+                Craft. <span className="text-primary glow-text">Code.</span>
                 <br />
                 <span className="bg-linear-to-r from-primary to-primary/50 bg-clip-text text-transparent">
-                  consectet
+                  Deliver.
                 </span>
               </h1>
               <p className="text-lg font-medium text-muted-foreground max-w-lg lg:max-w-xl animate-fade-in animation-delay-200">

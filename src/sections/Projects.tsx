@@ -11,14 +11,6 @@ import paws from '../assets/paws.png'
 
 const projects = [
   {
-    title: "Social Buffington",
-    description: 'A bespoke digital marketing portfolio crafted to showcase high-quality photography and a passion for the craft through an immersive, visually-driven experience.',
-    image: social,
-    tags: ["React", 'Typescript', 'Embla', "Figma", "Canva",],
-    link: 'https://socialbuffington.com',
-    github: 'https://github.com/rubenaguilardev/Social-Buffington'
-  },
-  {
     title: "CiscoPatch - Design in progress",
     description: 'A modern, professional website for a drywall contractor featuring a streamlined photo-based estimate request system that saves time and eliminates unnecessary site visits.',
     image: cisco,
@@ -26,6 +18,14 @@ const projects = [
     link: 'https://ciscopatch.vercel.app/',
     github: 'https://github.com/rubenaguilardev/cp',
     figma: 'https://www.figma.com/design/hSWBAlV63msPpCTTiDXn6d/CiscoPatch?node-id=0-1&p=f'
+  },
+  {
+    title: "Social Buffington",
+    description: 'A bespoke digital marketing portfolio crafted to showcase high-quality photography and a passion for the craft through an immersive, visually-driven experience.',
+    image: social,
+    tags: ["React", 'Typescript', 'Embla', "Figma", "Canva",],
+    link: 'https://socialbuffington.com',
+    github: 'https://github.com/rubenaguilardev/Social-Buffington'
   },
   {
     title: "Stemly - Work in progress",
@@ -86,14 +86,14 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                     <FiArrowUpRight className="w-5 h-5" />
                   </a>
-                  <a href={project.github} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                     <FiGithub className="w-5 h-5" />
                   </a>
                   {project.figma && (
-                    <a href={project.figma} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                    <a href={project.figma} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                       <FaFigma className="w-5 h-5" />
                     </a>
                   )}

@@ -3,7 +3,7 @@ const experiences = [
     period: '2025-Present',
     role: 'Frontend Developer/UI Designer',
     company: 'Chingu',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi veritatia.',
+    description: 'Collaborated on cross-functional remote teams to design and ship full-stack web applications, contributing across frontend development and UX/UI design.',
     technologies: ['React', 'Next', 'Typescript', 'TailwindCSS', 'Figma', 'Canva'],
     current: true
   },

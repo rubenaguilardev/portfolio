@@ -4,10 +4,10 @@ import gmail from "@/assets/gmail.svg"
 import Button from "@/components/ui/Button"
 
 const contactlLinks = [
-  { icon: gmail, href: '#', color: ' ' },
-  { icon: FaLinkedin, href: '#', color: '#0a66c2' },
-  { icon: FaGithub, href: '#', color: '' },
-  { icon: FaBluesky, href: '#', color: '#0085ff' }
+  { icon: gmail, href: 'mailto:ragui56@wgu.edu', color: ' ' },
+  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/rubenaguilar-/', color: '#0a66c2' },
+  { icon: FaGithub, href: 'https://github.com/rubenaguilardev', color: '' },
+  { icon: FaBluesky, href: 'https://bsky.app/profile/benaguilar.bsky.social', color: '#0085ff' }
 ]
 
 const Contact = () => {
@@ -60,8 +60,8 @@ const Contact = () => {
             </form>
           </div>
           <div className="flex md:flex-col justify-center items-center glass gap-6 py-4 md:py-0 px-5 rounded">
-            {contactlLinks.map(({ icon: Icon, color }) => (
-              <a href="">
+            {contactlLinks.map(({ href, icon: Icon, color }) => (
+              <a href={href} target="_blank" rel="noopener noreferrer">
                 {Icon === gmail ? <img src={Icon} className="w-8 h-8" /> :
                   <Icon className={`h-8 w-8 cursor-pointer`} style={{ color }} />}
               </a>
@@ -75,3 +75,4 @@ const Contact = () => {
 }
 
 export default Contact
+
