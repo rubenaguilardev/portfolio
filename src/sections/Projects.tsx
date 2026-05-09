@@ -1,12 +1,12 @@
 import AnimatedBorderButton from "@/components/ui/AnimatedBorderButton"
 import { FiArrowUpRight, FiGithub } from "react-icons/fi"
 import { FaFigma } from "react-icons/fa6";
-import debug from '../assets/debug.png'
-import chingu from '../assets/chingu.png'
-import social from '../assets/sb.png'
-import cisco from '../assets/cisco.png'
-import stemly from '../assets/stemly.png'
-import paws from '../assets/paws.png'
+import debug from '../assets/debug.avif'
+import chingu from '../assets/chingu.avif'
+import social from '../assets/sb.avif'
+import cisco from '../assets/cisco.avif'
+import stemly from '../assets/stemly.avif'
+import paws from '../assets/paws.avif'
 
 
 const projects = [
