@@ -29,9 +29,9 @@ const About = () => {
                 <img
                   src={profile}
                   alt="Ruben Aguilar"
-                  className="w-full aspect-4/5 object-cover rounded-2xl"
+                  className="w-full aspect-4/5 object-cover object-right rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-linear-to-t from-card via-card/10 to-transparent opacity-60" />
                 <div className='absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float'>
                   <div className='flex items-center gap-3'>
                     <div className='w-3 h-3 bg-green-500 rounded-full animate-pulse' />
