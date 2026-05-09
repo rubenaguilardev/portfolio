@@ -15,8 +15,8 @@ const Card = () => {
       <div className='flex justify-between items-center glass-strong px-6 py-6 rounded-t-[20px] h-10 w-full animate-fade-in-left animation-delay-400'>
         <div className='flex gap-2'>
           <span className="block w-3 h-3 bg-primary rounded-full" />
-          <span className="block w-3 h-3 bg-secondary rounded-full" />
-          <span className="block w-3 h-3 bg-white rounded-full" />
+          <span className="block w-3 h-3 bg-primary/50 rounded-full" />
+          <span className="block w-3 h-3 bg-primary/20 rounded-full" />
         </div>
         <div className='flex items-center gap-2'>
           <span className="block w-2 h-2 bg-[#003C9A] rounded-full" />

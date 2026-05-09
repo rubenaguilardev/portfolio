@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 xl:gap-24 items-center">
           <div className="space-y-8">
             <div className="">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary animate-fade-in">
@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Lorem <span className="text-primary glow-text">ipsum</span>
+                Hi <span className="text-primary glow-text">ipsum</span>
                 <br />
                 <span className="bg-linear-to-r from-primary to-primary/50 bg-clip-text text-transparent">
                   consectet
@@ -33,9 +33,9 @@ const Hero = () => {
               </h1>
               <p className="text-lg font-medium text-muted-foreground max-w-lg lg:max-w-xl animate-fade-in animation-delay-200">
                 Hi, I'm
-                <span className="text-white"> Ruben </span>
-                — a <span className="text-primary">full-stack software developer </span>
-                pursuing my Master's in CS, with an eye for detail and a love for good design. I craft web apps that are fast, functional, and polished. I work well in teams and care deeply about the craft.
+                <span className="text-white"> Ruben</span>
+                , a <span className="text-primary">full-stack software developer </span>
+                pursuing my Master's in CS, with an eye for detail and a love for good design. I build fast, polished web apps, work well in teams, and care deeply about the craft.
               </p>
               <div className='flex items-center gap-4'>
                 <span></span>

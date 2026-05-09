@@ -12,52 +12,52 @@ import paws from '../assets/paws.png'
 const projects = [
   {
     title: "Social Buffington",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    description: 'A bespoke digital marketing portfolio crafted to showcase high-quality photography and a passion for the craft through an immersive, visually-driven experience.',
     image: social,
-    tags: ["Figma", "Canva", "React", 'Typescript', 'Embla'],
+    tags: ["React", 'Typescript', 'Embla', "Figma", "Canva",],
     link: 'https://socialbuffington.com',
     github: 'https://github.com/rubenaguilardev/Social-Buffington'
   },
   {
     title: "CiscoPatch - Design in progress",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    description: 'A modern, professional website for a drywall contractor featuring a streamlined photo-based estimate request system that saves time and eliminates unnecessary site visits.',
     image: cisco,
-    tags: ["Figma", 'Canva', 'React', 'Typescript', 'TailwindCSS', 'Supabase', 'PostgreSQL'],
+    tags: ['React', 'Typescript', 'TailwindCSS', 'Supabase', 'PostgreSQL', "Figma", 'Canva'],
     link: 'https://ciscopatch.vercel.app/',
     github: 'https://github.com/rubenaguilardev/cp',
     figma: 'https://www.figma.com/design/hSWBAlV63msPpCTTiDXn6d/CiscoPatch?node-id=0-1&p=f'
   },
   {
     title: "Stemly - Work in progress",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    description: 'Stemly is a job application tracking app with a structured dashboard for managing applications, monitoring status changes, and surfacing conversion analytics like interview rates, offer rates, and average response time.',
     image: stemly,
-    tags: ["Figma", "Canva", "React", 'Typescript', 'TailwindCSS', "FastAPI", "PostgreSQL"],
+    tags: ["React", 'Typescript', 'TailwindCSS', "FastAPI", "PostgreSQL", "Figma", "Canva",],
     link: 'https://v60-tier3-team-39.netlify.app/',
     github: 'https://github.com/chingu-voyages/V59-tier3-team-39',
     figma: 'https://www.figma.com/design/R57ocInGi4U0TA72AmSRWV/Stemly?node-id=0-1&t=xlxnKhzlPv6Iw1ZL-1'
   },
   {
     title: "Debug Your Interview",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    description: 'A role-focused interview practice web app featuring an interactive Q&A demo, a curated simulator with model answers for five tech roles, and a live project case study with a roadmap toward LLM-powered feedback and session analytics.',
     image: debug,
-    tags: ["React", 'Typescript', 'TailwindCSS', 'Neon'],
+    tags: ["React", 'Typescript', 'TailwindCSS', 'Django', 'Neon'],
     link: 'https://v59-tier3-team-39.netlify.app/',
     github: 'https://github.com/chingu-voyages/V59-tier3-team-39'
   },
   {
     title: "Chingu Demographics",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    description: 'Built a full-stack interactive world map for the Chingu community that lets developers, designers, and PMs discover and connect with teammates globally, featuring role, tier, timezone, and country filters across a Next.js + Spring Boot architecture.',
     image: chingu,
-    tags: ['Figma', 'Canva', 'React', 'Typescript', 'TailwindCSS'],
+    tags: ['Nex', 'Typescript', 'TailwindCSS', "Figma", "Canva", 'Spring'],
     link: 'https://v58-tier3-team-39.onrender.com/',
     github: 'https://github.com/chingu-voyages/V58-tier3-team-39',
     figma: 'https://www.figma.com/design/UEGHVlucUZSJjj9HCnFEF6/Chingu-Demographics?node-id=0-1&t=xlxnKhzlPv6Iw1ZL-1'
   },
   {
     title: "Little Paws",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, ratione temporibus nulla dolor vel quisquam, perspiciatis.',
+    description: 'A warm and inviting pet adoption platform where future owners can browse and connect with dogs and cats looking for their forever home.',
     image: paws,
-    tags: ['Figma', 'Canva', 'React', 'Typescript', 'TailwindCSS'],
+    tags: ['React', 'Typescript', 'TailwindCSS', 'Figma', 'Canva',],
     link: 'https://v57-tier3-team-40.netlify.app/',
     github: 'https://github.com/chingu-voyages/V57-tier3-team-40',
     figma: 'https://www.figma.com/design/jrXhqo2KB28HM249MQ493A/Untitled?node-id=0-1&t=0rSEdfeOeBH2n6EV-1'
