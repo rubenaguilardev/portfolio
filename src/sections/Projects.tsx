@@ -15,7 +15,7 @@ const projects = [
     description: 'A modern, professional website for a drywall contractor featuring a streamlined photo-based estimate request system that saves time and eliminates unnecessary site visits.',
     image: cisco,
     tags: ['React', 'Typescript', 'TailwindCSS', 'Supabase', 'PostgreSQL', "Figma", 'Canva'],
-    link: 'https://ciscopatch.vercel.app/',
+    link: 'https://www.ciscopatch.com/',
     github: 'https://github.com/rubenaguilardev/cp',
     figma: 'https://www.figma.com/design/hSWBAlV63msPpCTTiDXn6d/CiscoPatch?node-id=0-1&p=f'
   },
