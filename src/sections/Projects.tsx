@@ -14,7 +14,7 @@ const projects = [
     title: "CiscoPatch - Design in progress",
     description: 'A modern, professional website for a drywall contractor featuring a streamlined photo-based estimate request system that saves time and eliminates unnecessary site visits.',
     image: cisco,
-    tags: ['React', 'Typescript', 'TailwindCSS', 'Supabase', 'PostgreSQL', "Figma", 'Canva'],
+    tags: ['React', 'TypeScript', 'TailwindCSS', 'Supabase', 'PostgreSQL', "Figma", 'Canva'],
     link: 'https://www.ciscopatch.com/',
     github: 'https://github.com/rubenaguilardev/cp',
     figma: 'https://www.figma.com/design/hSWBAlV63msPpCTTiDXn6d/CiscoPatch?node-id=0-1&p=f'
@@ -23,7 +23,7 @@ const projects = [
     title: "Social Buffington",
     description: 'A bespoke digital marketing portfolio crafted to showcase high-quality photography and a passion for the craft through an immersive, visually-driven experience.',
     image: social,
-    tags: ["React", 'Typescript', 'Embla', "Figma", "Canva",],
+    tags: ["React", 'JavaScript', 'Embla', "Figma", "Canva",],
     link: 'https://socialbuffington.com',
     github: 'https://github.com/rubenaguilardev/Social-Buffington'
   },
@@ -40,15 +40,15 @@ const projects = [
     title: "Debug Your Interview",
     description: 'A role-focused interview practice web app featuring an interactive Q&A demo, a curated simulator with model answers for five tech roles, and a live project case study with a roadmap toward LLM-powered feedback and session analytics.',
     image: debug,
-    tags: ["React", 'Typescript', 'TailwindCSS', 'Django', 'Neon'],
+    tags: ["React", 'TypeScript', 'TailwindCSS', 'Django', 'Neon'],
     link: 'https://v59-tier3-team-39.netlify.app/',
     github: 'https://github.com/chingu-voyages/V59-tier3-team-39'
   },
   {
     title: "Chingu Demographics",
-    description: 'Built a full-stack interactive world map for the Chingu community that lets developers, designers, and PMs discover and connect with teammates globally, featuring role, tier, timezone, and country filters across a Next.js + Spring Boot architecture.',
+    description: 'Built a full-stack interactive world map for the Chingu community that lets developers, designers, and PMs discover and connect with teammates globally, featuring role, tier, timezone, and country filters across different technologies.',
     image: chingu,
-    tags: ['Nex', 'Typescript', 'TailwindCSS', "Figma", "Canva", 'Spring'],
+    tags: ['Nex', 'TypeScript', 'TailwindCSS', "Figma", "Canva", 'Spring'],
     link: 'https://v58-tier3-team-39.onrender.com/',
     github: 'https://github.com/chingu-voyages/V58-tier3-team-39',
     figma: 'https://www.figma.com/design/UEGHVlucUZSJjj9HCnFEF6/Chingu-Demographics?node-id=0-1&t=xlxnKhzlPv6Iw1ZL-1'

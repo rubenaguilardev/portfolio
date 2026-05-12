@@ -46,7 +46,7 @@ const Hero = () => {
                     target='_blank'
                     rel='nonopener'
                     className='px-3 py-2.5 glass rounded-lg cursor-pointer hover:bg-surface/20 animate-fade-in animation-delay-300'>
-                    {<Icon className='h-7 w-7 transition-transform duration-300 hover:scale-115' />}
+                    {<Icon className='h-7 w-7 transition-transform duration-500 hover:scale-115' />}
                   </a>
                 ))}
               </div>
