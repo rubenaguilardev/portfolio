@@ -50,7 +50,7 @@ const Experience = () => {
                     <p className="text-sm text-muted-foreground mt-4">{exp.description}</p>
                     <div className={`flex flex-wrap gap-2 mt-4 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                       {exp.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-3 py-1.5 bg-surface/15 text-sm rounded-full text-muted-foreground">{tech}</span>
+                        <span key={techIndex} className="px-3 py-1.5 bg-surface/15 text-sm rounded-full border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">{tech}</span>
                       ))}
                     </div>
                   </div>
