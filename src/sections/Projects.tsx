@@ -31,7 +31,7 @@ const projects = [
     title: "Stemly - Work in progress",
     description: 'Stemly is a job application tracking app with a structured dashboard for managing applications, monitoring status changes, and surfacing conversion analytics like interview rates, offer rates, and average response time.',
     image: stemly,
-    tags: ["React", 'Typescript', 'TailwindCSS', "FastAPI", "PostgreSQL", "Figma", "Canva",],
+    tags: ["React", 'TypeScript', 'TailwindCSS', "FastAPI", "PostgreSQL", "Figma", "Canva",],
     link: 'https://v60-tier3-team-39.netlify.app/',
     github: 'https://github.com/chingu-voyages/V59-tier3-team-39',
     figma: 'https://www.figma.com/design/R57ocInGi4U0TA72AmSRWV/Stemly?node-id=0-1&t=xlxnKhzlPv6Iw1ZL-1'
@@ -57,7 +57,7 @@ const projects = [
     title: "Little Paws",
     description: 'A warm and inviting pet adoption platform where future owners can browse and connect with dogs and cats looking for their forever home.',
     image: paws,
-    tags: ['React', 'Typescript', 'TailwindCSS', 'Figma', 'Canva',],
+    tags: ['React', 'TypeScript', 'TailwindCSS', 'Figma', 'Canva',],
     link: 'https://v57-tier3-team-40.netlify.app/',
     github: 'https://github.com/chingu-voyages/V57-tier3-team-40',
     figma: 'https://www.figma.com/design/jrXhqo2KB28HM249MQ493A/Untitled?node-id=0-1&t=0rSEdfeOeBH2n6EV-1'
